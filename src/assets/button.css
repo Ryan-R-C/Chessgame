@@ -1,0 +1,19 @@
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 4px;
+    isolation: isolate;
+    width: 104px;
+    min-width: 104px;
+    height: 36px;
+    background: radial-gradient(50% 50% at 50% 50%, #7D89C4 0%, #4967FE 100%);
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }

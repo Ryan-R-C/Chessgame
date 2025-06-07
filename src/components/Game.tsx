@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Board, PieceColor, getValidMovesDev, getValidMovesDes, getValidMovesPO } from "./boardLogic";
+import { Board, PieceColor, getValidMovesDev, getValidMovesDes, getValidMovesPO } from "../game/boardLogic";
 import BoardComponent from "./Board";
 
 interface GameProps {
@@ -79,9 +79,17 @@ export default function Game({ initialBoard }: GameProps) {
   }
 
   return (
-    <div>
-      <h2>Turno: {turn === "white" ? "Branco" : "Preto"}</h2>
-      {winner && <h3>{message}</h3>}
+    <div
+    style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 16,
+    }}
+    >
+      <div>
+        <h2>Turno: {turn === "white" ? "Branco" : "Preto"}</h2>
+        {winner && <h3>{message}</h3>}
+      </div>
       {!winner && <p>{message}</p>}
       <BoardComponent
         board={board}
@@ -90,8 +98,8 @@ export default function Game({ initialBoard }: GameProps) {
         validMoves={validMoves}
       />
       {selected && !winner && (
-        <button onClick={() => { setSelected(null); setValidMoves([]); setMessage(""); }}>
-          Cancelar seleção
+        <button className="button" onClick={() => { setSelected(null); setValidMoves([]); setMessage(""); }}>
+          Cancel
         </button>
       )}
     </div>
