@@ -1,0 +1,73 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContainer {
+  background: #181818;
+  border-radius: 16px;
+  min-width: 320px;
+  box-shadow: 0 8px 32px #000a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 40px 40px;
+  gap: 20px;
+  width: 534px;
+  height: fit-content;
+  background: linear-gradient(94.68deg, rgba(250, 250, 250, 0.125) 9.22%, rgba(255, 255, 255, 0.05) 90.35%);
+  backdrop-filter: blur(16px);
+  border-radius: 16px 16px 0px 0px;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.starIcon {
+  width: 68px;
+  height: 68px;
+  display: block;
+}
+
+.title {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 12px;
+  height: 108px;
+  background: linear-gradient(94.68deg, rgba(250, 250, 250, 0.025) 9.22%, rgba(255, 255, 255, 0.01) 90.35%);
+  backdrop-filter: blur(16px);
+  border-radius: 0px 0px 16px 16px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 16px;
+} 
+
+.buttonRow button {
+  width: fit-content;
+} 

@@ -1,0 +1,23 @@
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.turn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  margin-bottom: 1rem;
+  color: #FF9F47;
+  font-weight: 500;
+  min-height: 24px;
+}
+
+.cancelButton {
+  margin-top: 12px;
+  align-self: flex-start;
+} 

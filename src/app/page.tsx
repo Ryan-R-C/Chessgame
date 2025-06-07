@@ -28,7 +28,7 @@ export default function Home() {
             onRestart={handleRestart}
           />
         )}
-        {board === null && <BoardSetup onBoardReady={setBoard} />}
+        <BoardSetup onBoardReady={setBoard} />
       </main>
     </div>
   );
